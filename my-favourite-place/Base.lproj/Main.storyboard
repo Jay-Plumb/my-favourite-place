@@ -117,7 +117,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="400" id="fqW-eC-BcS"/>
                                         </constraints>
-                                        <mutableString key="text">San Francisco is a popular tourist destination, known for its cool summers, fog, steep rolling hills, eclectic mix of architecture, and landmarks including the Golden Gate Bridge, cable cars, the former Alcatraz Federal Penitentiary, and its Chinatown district. San Francisco is also the headquarters of five major banking institutions and various other companies such as Levi Strauss &amp; Co., Gap Inc., Salesforce.com, Dropbox, Reddit, Square, Inc., Airbnb, Weebly, Pacific Gas and Electric Company, Yelp, Pinterest, Twitter, Uber, Mozilla, Wikimedia Foundation, and Craigslist. It has several nicknames, including "The City by the Bay", "Fog City", "San Fran", and "Frisco", as well as older ones like "The City that Knows How", "Baghdad by the Bay", and "The Paris of the West". As of 2015, San Francisco was ranked high on world livability rankings.</mutableString>
+                                        <string key="text">San Francisco is a popular tourist destination, known for its cool summers, fog, steep rolling hills, eclectic mix of architecture, and landmarks including the Golden Gate Bridge, cable cars, the former Alcatraz Federal Penitentiary, and its Chinatown district. San Francisco is also the headquarters of five major banking institutions and various other companies such as Levi Strauss &amp; Co., Gap Inc., Salesforce.com, Dropbox, Reddit, Square, Inc., Airbnb, Weebly, Pacific Gas and Electric Company, Yelp, Pinterest, Twitter, Uber, Mozilla, Wikimedia Foundation, and Craigslist. It has several nicknames, including "The City by the Bay", "Fog City", "San Fran", and "Frisco", as well as older ones like "The City that Knows How", "Baghdad by the Bay", and "The Paris of the West". As of 2015, San Francisco was ranked high on world livability rankings.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -151,23 +151,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1BX-Np-6eT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1089" y="1117"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Vah-Lg-qZf">
-            <objects>
-                <viewController id="dFb-JN-YZk" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wVZ-3T-W2Y"/>
-                        <viewControllerLayoutGuide type="bottom" id="1sx-CR-AC6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9hg-AA-5cr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rb9-Lb-yhu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>
