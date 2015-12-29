@@ -37,7 +37,7 @@
                                             <segue destination="mQb-w4-dtn" kind="show" id="bs3-To-es5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLR-WI-fN3" customClass="RoundButton" customModule="my_favourite_place" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLR-WI-fN3" customClass="RoundButton" customModule="my_favourite_place" customModuleProvider="target">
                                         <rect key="frame" x="240" y="0.0" width="150" height="50"/>
                                         <color key="backgroundColor" red="0.40688531100000003" green="0.78590025450000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="325" y="387"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="cku-mf-hMu">
             <objects>
-                <viewController id="mQb-w4-dtn" sceneMemberID="viewController">
+                <viewController id="mQb-w4-dtn" customClass="DetailViewController" customModule="my_favourite_place" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MPf-an-1iM"/>
                         <viewControllerLayoutGuide type="bottom" id="CpQ-fc-O6J"/>
@@ -93,7 +93,41 @@
                     <view key="view" contentMode="scaleToFill" id="pUF-BY-lkn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99228950469999999" green="1" blue="0.79246351319999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WEe-Lo-dmM">
+                                <rect key="frame" x="20" y="20" width="550" height="630"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUf-sJ-UKH">
+                                        <rect key="frame" x="0.0" y="0.0" width="550" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backPressed:" destination="mQb-w4-dtn" eventType="touchUpInside" id="2aw-i5-woe"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="goldenGateBridge" translatesAutoresizingMaskIntoConstraints="NO" id="Rbs-6E-0EF">
+                                        <rect key="frame" x="0.0" y="30" width="550" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="550" id="Pkd-2S-1aS"/>
+                                            <constraint firstAttribute="height" constant="300" id="vNV-XY-r4E"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Tu-qF-yXw">
+                                        <rect key="frame" x="0.0" y="330" width="550" height="300"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="fqW-eC-BcS"/>
+                                        </constraints>
+                                        <mutableString key="text">San Francisco is a popular tourist destination, known for its cool summers, fog, steep rolling hills, eclectic mix of architecture, and landmarks including the Golden Gate Bridge, cable cars, the former Alcatraz Federal Penitentiary, and its Chinatown district. San Francisco is also the headquarters of five major banking institutions and various other companies such as Levi Strauss &amp; Co., Gap Inc., Salesforce.com, Dropbox, Reddit, Square, Inc., Airbnb, Weebly, Pacific Gas and Electric Company, Yelp, Pinterest, Twitter, Uber, Mozilla, Wikimedia Foundation, and Craigslist. It has several nicknames, including "The City by the Bay", "Fog City", "San Fran", and "Frisco", as well as older ones like "The City that Knows How", "Baghdad by the Bay", and "The Paris of the West". As of 2015, San Francisco was ranked high on world livability rankings.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WEe-Lo-dmM" firstAttribute="centerX" secondItem="pUF-BY-lkn" secondAttribute="centerX" id="rqd-wM-4Zj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z5s-g1-AqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -118,8 +152,26 @@
             </objects>
             <point key="canvasLocation" x="1089" y="1117"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Vah-Lg-qZf">
+            <objects>
+                <viewController id="dFb-JN-YZk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wVZ-3T-W2Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="1sx-CR-AC6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9hg-AA-5cr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rb9-Lb-yhu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
+        <image name="goldenGateBridge" width="1200" height="902"/>
         <image name="sanfrancisco" width="500" height="750"/>
     </resources>
 </document>
