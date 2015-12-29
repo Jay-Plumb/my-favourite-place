@@ -20,30 +20,36 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanfrancisco" translatesAutoresizingMaskIntoConstraints="NO" id="cv6-1Y-BVg" customClass="go">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="JVk-WO-5FU">
-                                <rect key="frame" x="83" y="493" width="400" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="JVk-WO-5FU">
+                                <rect key="frame" x="83" y="493" width="390" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMQ-DU-jMP" customClass="RoundButton" customModule="my_favourite_place" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
                                         <color key="backgroundColor" red="0.40688531100000003" green="0.78590025450000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="8HD-Xj-v20"/>
-                                            <constraint firstAttribute="height" constant="30" id="nS8-xP-Fwj"/>
+                                            <constraint firstAttribute="height" constant="50" id="nS8-xP-Fwj"/>
                                         </constraints>
                                         <state key="normal" title="About SF">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="mQb-w4-dtn" kind="show" id="bs3-To-es5"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLR-WI-fN3" customClass="RoundButton" customModule="my_favourite_place" customModuleProvider="target">
-                                        <rect key="frame" x="250" y="0.0" width="150" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLR-WI-fN3" customClass="RoundButton" customModule="my_favourite_place" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="0.0" width="150" height="50"/>
                                         <color key="backgroundColor" red="0.40688531100000003" green="0.78590025450000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="Vdv-Fp-kOT"/>
-                                            <constraint firstAttribute="height" constant="30" id="kdT-bb-cX5"/>
+                                            <constraint firstAttribute="height" constant="50" id="kdT-bb-cX5"/>
                                         </constraints>
                                         <state key="normal" title="Photos">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="UYu-a5-gAU" kind="show" id="l5h-cl-fvw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -75,6 +81,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325" y="387"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cku-mf-hMu">
+            <objects>
+                <viewController id="mQb-w4-dtn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MPf-an-1iM"/>
+                        <viewControllerLayoutGuide type="bottom" id="CpQ-fc-O6J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pUF-BY-lkn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99228950469999999" green="1" blue="0.79246351319999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5s-g1-AqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073" y="71"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="adb-64-E55">
+            <objects>
+                <viewController id="UYu-a5-gAU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nlo-mC-Ctx"/>
+                        <viewControllerLayoutGuide type="bottom" id="eE7-R5-Qc7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L9Y-NC-S2b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1BX-Np-6eT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="1117"/>
         </scene>
     </scenes>
     <resources>

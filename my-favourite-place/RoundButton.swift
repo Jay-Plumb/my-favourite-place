@@ -10,12 +10,10 @@ import UIKit
 
 class RoundButton: UIButton {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    override func awakeFromNib() {
+        self.layer.cornerRadius = 1.0
+        self.backgroundColor = UIColor(red: 10.0/255.0, green: 100.0/255.0, blue: 110.0/255.0, alpha: 0.9)
+        self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
     }
-    */
 
 }
